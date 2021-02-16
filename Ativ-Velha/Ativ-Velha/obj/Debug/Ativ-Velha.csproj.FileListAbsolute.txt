@@ -1,0 +1,7 @@
+C:\Users\Irwilha\Documents\LearnSpace\Ativ-Velha\Ativ-Velha\obj\Debug\Ativ-Velha.csprojAssemblyReference.cache
+C:\Users\Irwilha\Documents\LearnSpace\Ativ-Velha\Ativ-Velha\obj\Debug\Ativ-Velha.csproj.CoreCompileInputs.cache
+C:\Users\Irwilha\Documents\LearnSpace\Ativ-Velha\Ativ-Velha\bin\Debug\Ativ-Velha.exe.config
+C:\Users\Irwilha\Documents\LearnSpace\Ativ-Velha\Ativ-Velha\bin\Debug\Ativ-Velha.exe
+C:\Users\Irwilha\Documents\LearnSpace\Ativ-Velha\Ativ-Velha\bin\Debug\Ativ-Velha.pdb
+C:\Users\Irwilha\Documents\LearnSpace\Ativ-Velha\Ativ-Velha\obj\Debug\Ativ-Velha.exe
+C:\Users\Irwilha\Documents\LearnSpace\Ativ-Velha\Ativ-Velha\obj\Debug\Ativ-Velha.pdb

@@ -1,0 +1,7 @@
+C:\Users\Irwilha\Documents\LearnSpace\CadastroVeiculos\CadastroVeiculos\bin\Debug\CadastroVeiculos.exe.config
+C:\Users\Irwilha\Documents\LearnSpace\CadastroVeiculos\CadastroVeiculos\bin\Debug\CadastroVeiculos.exe
+C:\Users\Irwilha\Documents\LearnSpace\CadastroVeiculos\CadastroVeiculos\bin\Debug\CadastroVeiculos.pdb
+C:\Users\Irwilha\Documents\LearnSpace\CadastroVeiculos\CadastroVeiculos\obj\Debug\CadastroVeiculos.csprojAssemblyReference.cache
+C:\Users\Irwilha\Documents\LearnSpace\CadastroVeiculos\CadastroVeiculos\obj\Debug\CadastroVeiculos.csproj.CoreCompileInputs.cache
+C:\Users\Irwilha\Documents\LearnSpace\CadastroVeiculos\CadastroVeiculos\obj\Debug\CadastroVeiculos.exe
+C:\Users\Irwilha\Documents\LearnSpace\CadastroVeiculos\CadastroVeiculos\obj\Debug\CadastroVeiculos.pdb
