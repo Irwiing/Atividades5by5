@@ -1,0 +1,7 @@
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EdPilhaLivros\EdPilhaLivros\bin\Debug\EdPilhaLivros.exe.config
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EdPilhaLivros\EdPilhaLivros\bin\Debug\EdPilhaLivros.exe
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EdPilhaLivros\EdPilhaLivros\bin\Debug\EdPilhaLivros.pdb
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EdPilhaLivros\EdPilhaLivros\obj\Debug\EdPilhaLivros.csprojAssemblyReference.cache
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EdPilhaLivros\EdPilhaLivros\obj\Debug\EdPilhaLivros.csproj.CoreCompileInputs.cache
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EdPilhaLivros\EdPilhaLivros\obj\Debug\EdPilhaLivros.exe
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EdPilhaLivros\EdPilhaLivros\obj\Debug\EdPilhaLivros.pdb
