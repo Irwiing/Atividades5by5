@@ -1,0 +1,7 @@
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\ContaCorrente\ContaCorrente\obj\Debug\ContaCorrente.csprojAssemblyReference.cache
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\ContaCorrente\ContaCorrente\obj\Debug\ContaCorrente.csproj.CoreCompileInputs.cache
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\ContaCorrente\ContaCorrente\bin\Debug\ContaCorrente.exe.config
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\ContaCorrente\ContaCorrente\bin\Debug\ContaCorrente.exe
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\ContaCorrente\ContaCorrente\bin\Debug\ContaCorrente.pdb
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\ContaCorrente\ContaCorrente\obj\Debug\ContaCorrente.exe
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\ContaCorrente\ContaCorrente\obj\Debug\ContaCorrente.pdb
