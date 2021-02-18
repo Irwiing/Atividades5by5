@@ -75,6 +75,7 @@ namespace EdPilhaLivros
         }
         public void FindBookByTitle(string title)
         {
+            bool find = false;
             if (isNull())
             {
                 Console.WriteLine("\nNão há livros cadastrados\n");
@@ -84,16 +85,17 @@ namespace EdPilhaLivros
                 Book aux = Top;
                 do
                 {
-                    if(aux.Title == title)
+                    if(aux.Title.ToUpper().Contains(title.ToUpper()))
                     {
                         Console.WriteLine(aux.ToString());
-                        return;
+                        find = true;
                     }
                     aux = aux.Previous;                   
 
                 } while (aux != null);
             }
-            Console.WriteLine("\nNão há livros cadastrados com esse titulo.\n");
+            if(!find)
+                Console.WriteLine("\nNão há livros cadastrados com esse titulo.\n");
         }
     }
 }

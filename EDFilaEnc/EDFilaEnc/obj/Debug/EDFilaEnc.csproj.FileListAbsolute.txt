@@ -1,0 +1,7 @@
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EDFilaEnc\EDFilaEnc\bin\Debug\EDFilaEnc.exe.config
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EDFilaEnc\EDFilaEnc\bin\Debug\EDFilaEnc.exe
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EDFilaEnc\EDFilaEnc\bin\Debug\EDFilaEnc.pdb
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EDFilaEnc\EDFilaEnc\obj\Debug\EDFilaEnc.csprojAssemblyReference.cache
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EDFilaEnc\EDFilaEnc\obj\Debug\EDFilaEnc.csproj.CoreCompileInputs.cache
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EDFilaEnc\EDFilaEnc\obj\Debug\EDFilaEnc.exe
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\EDFilaEnc\EDFilaEnc\obj\Debug\EDFilaEnc.pdb
