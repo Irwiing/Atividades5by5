@@ -1,0 +1,14 @@
+C:\Users\55169\source\repos\PListaDinSimEnc\PListaDinSimEnc\bin\Debug\PListaDinSimEnc.exe.config
+C:\Users\55169\source\repos\PListaDinSimEnc\PListaDinSimEnc\bin\Debug\PListaDinSimEnc.exe
+C:\Users\55169\source\repos\PListaDinSimEnc\PListaDinSimEnc\bin\Debug\PListaDinSimEnc.pdb
+C:\Users\55169\source\repos\PListaDinSimEnc\PListaDinSimEnc\obj\Debug\PListaDinSimEnc.csprojAssemblyReference.cache
+C:\Users\55169\source\repos\PListaDinSimEnc\PListaDinSimEnc\obj\Debug\PListaDinSimEnc.csproj.CoreCompileInputs.cache
+C:\Users\55169\source\repos\PListaDinSimEnc\PListaDinSimEnc\obj\Debug\PListaDinSimEnc.exe
+C:\Users\55169\source\repos\PListaDinSimEnc\PListaDinSimEnc\obj\Debug\PListaDinSimEnc.pdb
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\PListaDinSimEnc\PListaDinSimEnc\bin\Debug\PListaDinSimEnc.exe.config
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\PListaDinSimEnc\PListaDinSimEnc\bin\Debug\PListaDinSimEnc.exe
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\PListaDinSimEnc\PListaDinSimEnc\bin\Debug\PListaDinSimEnc.pdb
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\PListaDinSimEnc\PListaDinSimEnc\obj\Debug\PListaDinSimEnc.csprojAssemblyReference.cache
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\PListaDinSimEnc\PListaDinSimEnc\obj\Debug\PListaDinSimEnc.csproj.CoreCompileInputs.cache
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\PListaDinSimEnc\PListaDinSimEnc\obj\Debug\PListaDinSimEnc.exe
+C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\PListaDinSimEnc\PListaDinSimEnc\obj\Debug\PListaDinSimEnc.pdb
