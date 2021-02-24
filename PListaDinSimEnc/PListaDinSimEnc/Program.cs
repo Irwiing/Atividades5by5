@@ -10,7 +10,8 @@ namespace PListaDinSimEnc
     {
         static void Main(string[] args)
         {
-            ListaContatos listaContatos = new ListaContatos { Head = null, Tail = null };
+
+            List<Pessoa> listaContatos = new List<Pessoa>();
 
             int op = -1;
             while (op != 0)
@@ -22,26 +23,24 @@ namespace PListaDinSimEnc
                     case 1:
                         Pessoa pessoa = FormularioPessoa();
                         FormularioTelefone(pessoa);
-                        listaContatos.Push(pessoa);
+                        ListaContatosAdd(pessoa, listaContatos);
                         break;
                     case 2:
                         Pessoa pessoaRemover = FormularioPessoa();
-                        listaContatos.Pop(pessoaRemover);
+                        ListaContatosRemove(pessoaRemover, listaContatos);
                         break;
                     case 3:
                         Pessoa pessoaProcurar = FormularioPessoa();
-                        listaContatos.PrintPessoa(pessoaProcurar);
-                        Console.ReadKey();
+                        ListaContatosProcurar(pessoaProcurar, listaContatos);
                         break;
                     case 4:
-                        listaContatos.Print();
-                        Console.ReadKey();
+                        ListaContatosListar(listaContatos);
                         break;
                     case 5:
-                        VerContato(listaContatos.Head);
+                        ListaContatosPassar(listaContatos);
                         break;
                     case 6:
-                        Console.WriteLine($"Sua lista tem: {listaContatos.Cont} contatos.");
+                        Console.WriteLine($"Sua lista tem: {listaContatos.Count} contatos.");
                         Console.ReadKey();
                         break;
                 }
@@ -77,6 +76,57 @@ namespace PListaDinSimEnc
                     VerContato(pessoa);
                 }
             } while (intOp != 0);
+        }
+        static void ListaContatosAdd(Pessoa pessoa, List<Pessoa> listaContatos)
+        {
+            listaContatos.Add(pessoa);
+            Console.WriteLine("\nContato adicionado com sucesso!");
+            Console.ReadKey();
+        }
+        static void ListaContatosRemove(Pessoa pessoa, List<Pessoa> ListaContatos)
+        {
+            ListaContatos?.ForEach(contato =>
+            {
+                if (contato.Nome.Equals(pessoa.Nome))
+                {
+                    pessoa = contato;
+                    return;
+                }
+            });
+            if (ListaContatos.Remove(pessoa))
+                Console.WriteLine("\nContato removido com sucesso!");
+            else
+                Console.WriteLine("\nContato não existe/fila está vazia");
+
+            Console.ReadKey();
+        }
+        static void ListaContatosListar(List<Pessoa> ListaContatos)
+        {
+            ListaContatos.Sort((contato1, contato2) => contato1.Nome.CompareTo(contato2.Nome));
+            ListaContatos?.ForEach(contato =>
+            {
+                Console.WriteLine(contato);
+            });
+            Console.ReadKey();
+        }
+        static void ListaContatosProcurar(Pessoa pessoa, List<Pessoa> ListaContatos)
+        {
+
+            Console.WriteLine(ListaContatos?.Find(contato => contato.Nome.Equals(pessoa.Nome)));
+            Console.ReadKey();
+        }
+        static void ListaContatosPassar(List<Pessoa> ListaContatos)
+        {
+            ListaContatos?.Sort((contato1, contato2) => contato1.Nome.CompareTo(contato2.Nome));
+            ListaContatos.ForEach(contato =>
+            {
+                Console.WriteLine(contato);
+
+                Console.WriteLine("\n0 - Sair\n1 - Proximo");
+                int op = int.Parse(Console.ReadLine());
+                if (op == 0)
+                    return;
+            });
         }
         static Pessoa FormularioPessoa()
         {
@@ -123,7 +173,7 @@ namespace PListaDinSimEnc
                 op = Console.ReadLine();
             } while (op.ToUpper() != "NAO");
 
-            pessoa.telefone = telefones.ToArray();
+            pessoa.telefone = telefones;
 
         }
         static int Menu()
