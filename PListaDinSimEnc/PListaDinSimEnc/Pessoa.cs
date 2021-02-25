@@ -8,16 +8,19 @@ namespace PListaDinSimEnc
 {
     class Pessoa
     {
-        public string  Nome { get; set; }
-        public List<Telefone> telefone { get; set; }
-        public Pessoa Proximo { get; set; }
+        public string Nome { get; set; }
+        public Telefone telefone { get; set; }
+
 
         public override string ToString()
         {
-            string fones="";
-            foreach (Telefone t in telefone)
-                fones = fones + t.ToString();
-            return "\n>>DADOS DO CONTATO<<<\nNome:" + Nome + "\n"+fones;
+
+            return $"\n>>DADOS DO CONTATO<<<\nNome: {Nome}\nTelefone: {telefone}";
+        }
+
+        public string ToCsvConverter()
+        {
+            return $"{Nome},{telefone.DDD},{telefone.Numero},{telefone.Tipo}";
         }
     }
 }

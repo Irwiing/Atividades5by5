@@ -10,8 +10,15 @@ namespace PListaDinSimEnc
     {
         static void Main(string[] args)
         {
-
             List<Pessoa> listaContatos = new List<Pessoa>();
+            FileManipulator arquivoListaContatos = new FileManipulator
+            {
+                FilePath = @"C:\Users\Irwilha\Documents\LearnSpace\Atividades5by5\PListaDinSimEnc",
+                FileName = "ListaContato",
+                FileExtension = "csv"
+            };
+
+            arquivoListaContatos.InitializeFile(listaContatos);
 
             int op = -1;
             while (op != 0)
@@ -24,10 +31,12 @@ namespace PListaDinSimEnc
                         Pessoa pessoa = FormularioPessoa();
                         FormularioTelefone(pessoa);
                         ListaContatosAdd(pessoa, listaContatos);
+                        arquivoListaContatos.WriteInFile(pessoa);
                         break;
                     case 2:
                         Pessoa pessoaRemover = FormularioPessoa();
                         ListaContatosRemove(pessoaRemover, listaContatos);
+                        arquivoListaContatos.WriteInFile(listaContatos);
                         break;
                     case 3:
                         Pessoa pessoaProcurar = FormularioPessoa();
@@ -47,36 +56,6 @@ namespace PListaDinSimEnc
             }
         }
 
-        static void VerContato(Pessoa pessoa)
-        {
-            string op;
-            int intOp;
-            if (pessoa == null)
-            {
-                Console.WriteLine("\nNão tem contatos");
-            }
-            do
-            {
-                Console.Clear();
-                Console.WriteLine(pessoa.ToString());
-                if (pessoa.Proximo != null)
-                {
-                    pessoa = pessoa.Proximo;
-                    Console.WriteLine("\n\t1 - Proximo\t0 - Menu");
-                    op = Console.ReadLine();
-                }
-                else
-                {
-                    Console.WriteLine("\nFim da lista");
-                    Console.ReadKey();
-                    return;
-                }
-                if (!int.TryParse(op, out intOp))
-                {
-                    VerContato(pessoa);
-                }
-            } while (intOp != 0);
-        }
         static void ListaContatosAdd(Pessoa pessoa, List<Pessoa> listaContatos)
         {
             listaContatos.Add(pessoa);
@@ -85,15 +64,7 @@ namespace PListaDinSimEnc
         }
         static void ListaContatosRemove(Pessoa pessoa, List<Pessoa> ListaContatos)
         {
-            ListaContatos?.ForEach(contato =>
-            {
-                if (contato.Nome.Equals(pessoa.Nome))
-                {
-                    pessoa = contato;
-                    return;
-                }
-            });
-            if (ListaContatos.Remove(pessoa))
+            if (ListaContatos.Remove(ListaContatos.Find(contato => contato.Nome.Equals(pessoa.Nome))))
                 Console.WriteLine("\nContato removido com sucesso!");
             else
                 Console.WriteLine("\nContato não existe/fila está vazia");
@@ -141,40 +112,36 @@ namespace PListaDinSimEnc
         }
         static void FormularioTelefone(Pessoa pessoa)
         {
-            string op;
-            List<Telefone> telefones = new List<Telefone>();
-            do
+            //List<Telefone> telefones = new List<Telefone>();
+            //string op;
+            //do
+            //{
+            //    Console.WriteLine("\nGostaria de cadastrar outro numero para este contato?\nSIM\tNAO");
+            //    op = Console.ReadLine();
+            //} while (op.ToUpper() != "NAO");
+
+            Console.Write("DDD: ");
+            string ddd = Console.ReadLine();
+
+            Console.Write("Numero: ");
+            string numero = Console.ReadLine();
+
+            Console.Write("Tipo de contato: ");
+            string tipo = Console.ReadLine();
+
+            if (!int.TryParse(ddd, out int intDDD) || !int.TryParse(numero, out int intNumero))
             {
-
-                Console.Write("DDD: ");
-                string ddd = Console.ReadLine();
-
-                Console.Write("Numero: ");
-                string numero = Console.ReadLine();
-
-                Console.Write("Tipo de contato: ");
-                string tipo = Console.ReadLine();
-
-                if (!int.TryParse(ddd, out int intDDD) || !int.TryParse(numero, out int intNumero))
+                FormularioTelefone(pessoa);
+            }
+            else
+            {
+                pessoa.telefone = new Telefone
                 {
-                    FormularioTelefone(pessoa);
-                }
-                else
-                {
-                    telefones.Add(new Telefone
-                    {
-                        DDD = intDDD,
-                        Numero = intNumero,
-                        Tipo = tipo,
-                    });
-                }
-
-                Console.WriteLine("\nGostaria de cadastrar outro numero para este contato?\nSIM\tNAO");
-                op = Console.ReadLine();
-            } while (op.ToUpper() != "NAO");
-
-            pessoa.telefone = telefones;
-
+                    DDD = intDDD,
+                    Numero = intNumero,
+                    Tipo = tipo,
+                };
+            }
         }
         static int Menu()
         {
